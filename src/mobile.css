@@ -1,0 +1,359 @@
+/*mobile Home */
+.TopContainerMobile{
+    display: flex;
+    width: 90%;
+    display: inline;
+    margin-left: 5%;
+    margin-top: 23%;
+}
+.headerStyleMobile{
+    font-style: cursive;
+    font-size: 9vw;
+    font-weight: 400;
+    line-height: 1.6;
+    display: inline;
+    
+}
+.frontTextMobile{
+    margin-top: 5%;
+    font-style: monospace;
+    font-size: 2.9vw;
+    color:grey;
+}
+
+
+.smallLetterMobile{
+  display: inline;
+  font-style: normal;
+  font-size: 10vw;
+  font-weight: 400;
+  color:aqua;
+  line-height: 1.6;
+  text-shadow: 1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+  1px 18px 6px rgba(43, 43, 43, 0.4),
+  1px 22px 10px rgba(43, 43, 43,0.2),
+  1px 25px 35px rgba(43, 43, 43, 0.2),
+  1px 30px 60px rgba(43, 43, 43,0.4);
+}
+/*Mobile nav*/
+.mobileMenuContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+}
+.burgerContainer{
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    margin-left: auto;
+    justify-content: center;
+    margin-right: 2%;
+    z-index: 20;
+}
+.imageLinkContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 5px;
+    margin-right: 5%;
+    height: 60%;
+    width: 22%;
+    background-color: aqua;
+}
+.textInMobileBar{
+    font-size: 5vw;
+}
+.imageInMobileBar{
+    width:28%;
+    height:60%;
+    margin-right: 5%;
+}
+
+.mobileMenuContainerActive{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    z-index: 20;
+    background-color: #000000;
+    color: beige;
+}
+
+.mobileNavImageContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.linkImageMobileNav{
+    width:35%;
+    height: 35%;
+}
+
+/*Profile Mobile */
+.TopProfileContainerMobile{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.topProfileTextMobile{
+    margin-top: 5%;
+    font-style: monospace;
+    font-size: 2.9vh;
+    line-height: 4vh;
+}
+.skillsBoxMobile{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    margin-bottom: 10%;
+}
+.skillsBoxRowMobile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+.skillsBoxColumnMobile{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.skillsBoxHeaderMobile{
+    margin-left: 10%;
+    font-style: cursive;
+    font-size: 5vh;
+    font-weight: 400;
+    color:black;
+}
+.keySkillsTextMobile{
+    margin-left: 10%;
+    font-style: cursive;
+    font-size: 3vh;
+    font-weight: 400;
+    color:black;
+}
+
+/* projects */
+.projectsContainerMobile{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+.textInBoxMobile{
+    color: black;
+    font-style: normal;
+    font-size: 1.2vh;
+    font-weight: 300;
+}
+.containerImageMobile{
+    width:90%; 
+    height: 50%;
+    border-radius: 8px;
+    pointer-events: none;
+}
+.buttonRowInBoxmobile{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-bottom: 5%;
+    align-items: center;
+    width: 90%;
+}
+
+
+/* Contact*/
+.contactPageHeaderContainerMobile{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contactHeaderStyleMobile{
+    font-style: cursive;
+    font-size: 4.6vh;
+    font-weight: 400;
+    line-height: 0.6;
+  }
+  
+  
+  .contactBoxSmallMobile{
+    display: flex;
+    flex-direction: column;
+    width:98%;
+    height: 98%;
+    margin-top: 0.6%;
+    background-color: rgb(69, 69, 126);
+    border-radius: 30px;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .contactBoxSmallHeaderContainerMobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 3%;
+  }
+  .contactBoxSmallHeaderMobile{
+    font-style: cursive;
+    font-size: 3.9vh;
+    font-weight: 400;
+    line-height: 0.3;
+  }
+  .contactBoxSmallTextMobile{
+    font-style: cursive;
+    font-size: 2.5vh;
+    font-weight: 350;
+    line-height: 1;
+  }
+  .contactBoxSmallCenterContainerMobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 4%;
+    
+  }
+ 
+  .contactBoxInfoTextMobile{
+    margin-left: 10%;
+    font-style: cursive;
+    font-size: 2.5vh;
+    font-weight: 300;
+    line-height: 1;
+  }
+  
+  .iconsBoxBottomContainerMobile{
+    display: flex;
+    flex-direction: row;
+    width:40%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 11%;
+    margin-bottom: 5%;
+    
+  }
+  .iconsBoxStyleMobile{
+    width: 55%;
+    height: 20%;
+  }
+  .iconsMobileInContact{
+    width: 60%;
+    height:60%;
+  }
+  .contactBoxBigContainerMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    height: 90%;
+    margin-top: 5%;
+  }
+  
+  .contactBoxFullRowContainermobile{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .contactBoxFullColumnContainerMobile{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    width: 95%;
+    color: black;
+    border-color:rgb(69, 69, 126);
+  }
+  
+  .contactBoxFullTextMobile{
+    font-size: 3.1vh;
+    font-weight: 400;
+    line-height: 1;
+    
+  }
+  .contactBoxFullInputMobile{
+    outline: 0; 
+    border-width: 0 0 2px;
+    border-color: inherit;
+    background-color: inherit;
+    width:88%;
+    font-size: 2.5vh;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  
+  .contactBoxButtonMobile{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-right: 11%;
+    width: 28vw;
+    height:8vh;
+    border-radius: 10px;
+    background-color: rgb(69, 69, 126);
+  }
+  .contactBoxSmallBalloonMobile{
+    width:95%;
+    height:80%;
+    background-color: #fd02fd;
+    position: absolute;
+    border-radius: 50%;
+    bottom:-53%;
+    right:-53%;
+  }
+  .contactBoxSmallBalloonsecondMobile{
+    width:20%;
+    height:15%;
+    background-color: rgba(66, 56, 104, 0.8);
+    position: absolute;
+    border-radius: 50%;
+    bottom:11%;
+    right:11%;
+  }
+
+  /*prevent text select*/
+  .unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }

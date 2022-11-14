@@ -1,38 +1,428 @@
 .App {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  max-height:100vh;
+}
+.sideMenu{
+  display: flex;
+  max-width: 3vw;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(30, 30, 30);
+}
+.sideMenuTop{
+  margin-bottom: auto;
+}
+.sideMenuCenterLinkContainer{
+  margin-top: 2.1vh;
+}
+
+.sideMenuLink{
+  width: 100%;
+  height:75%;
+}
+
+.sideMenuCenter{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 24vh;
+}
+.sideMenuBottom{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 5vh;
+}
+.smallLinkSideMenu{
+  margin-bottom: 1.1vh;
+  width: 100%;
+  height:75%;
+}
+
+
+.TopContainer{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+  display: inline;
+}
+.TopProfileContainer{
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 10%;
+  display: inline;
+}
+.topButtonContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.topButton{
+  margin-top: 5vh;
+  text-align: center;
+  border-width: 3px;
+  border-style: solid;
+  border-color:aqua;
+  width: 10vw;
+}
+
+.profileHeader{
+  text-align: center;
+  font-style: cursive;
+  font-size: 3vw;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 10%;
+}
+
+.profileText{
+  font-style: monospace;
+  font-size: 0.92vw;
+  font-weight: 400;
+  line-height: 2.9;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.skillsBoxTransparent{
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: rotatez(8deg);
+  border-radius: 10%;
+  border-bottom-left-radius: 50%;
+  width: inherit;
+  height:inherit;
+  z-index: -1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.skillsBox{
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height:48%;
+  margin-left: 10%;
+  border-radius: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  z-index: 10;
+}
+.skillsBoxRow{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.skillsBoxColumn{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.skillsBoxHeader{
+  margin-left: 10%;
+  font-style: cursive;
+  font-size: 2vw;
+  font-weight: 400;
+  line-height: 1.6;
+  color:black;
+}
+.keySkillsText{
+  margin-left: 10%;
+  font-style: cursive;
+  font-size: 1vw;
+  font-weight: 400;
+  line-height: 0.6;
+  color:black;
+}
+
+.headerStyle{
+  font-style: cursive;
+  font-size: 3vw;
+  font-weight: 400;
+  line-height: 1.6;
+  display: inline;
+}
+
+.frontText{
+  font-style: monospace;
+  font-size: 0.92vw;
+  color:grey;
+}
+
+
+.contactPageHeaderContainer{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  width:100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+.contactHeaderStyle{
+  font-style: cursive;
+  font-size: 2.6vw;
+  font-weight: 400;
+  line-height: 0.6;
 }
 
-.App-link {
-  color: #61dafb;
+
+.contactBoxSmall{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  height: 98%;
+  margin-left: 0.6%;
+  background-color: rgb(69, 69, 126);
+  border-radius: 30px;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.contactBoxSmallHeaderContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+.contactBoxSmallHeader{
+  font-style: cursive;
+  font-size: 1.9vw;
+  font-weight: 400;
+  line-height: 0.3;
+}
+.contactBoxSmallText{
+  font-style: cursive;
+  font-size: 1vw;
+  font-weight: 340;
+  line-height: 1;
+}
+.contactBoxSmallCenterContainer{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 6%;
+  
+}
+.contactBoxSmallCenterContainerRow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3%;
+}
+.contactBoxIcon{
+  width: 7%;
+  height: 57%;
+}
+.contactBoxInfoText{
+  margin-left: 10%;
+  font-style: cursive;
+  font-size: 1.1vw;
+  font-weight: 300;
+  line-height: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.iconsBoxBottomContainer{
+  display: flex;
+  flex-direction: row;
+  width:40%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 21%;
+  margin-bottom: 5%;
+  
 }
+.iconsBoxStyle{
+  width: 21%;
+  height: 80%;
+}
+.contactBoxBigContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 58.4%;
+  height: 90%;
+}
+
+.contactBoxFullRowContainer{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  align-items: center;
+  width: 100%;
+}
+
+.contactBoxFullColumnContainer{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  color: black;
+  border-color:rgb(69, 69, 126);
+}
+.contactBoxFullMessageContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: black;
+  
+}
+.contactBoxFullText{
+  font-size: 1.1vw;
+  font-weight: 400;
+  line-height: 1;
+  
+}
+.contactBoxFullInput{
+  outline: 0; 
+  border-width: 0 0 2px;
+  border-color: inherit;
+  background-color: inherit;
+  width:88%;
+  font-size: 1.1vw;
+  font-weight: 400;
+  line-height: 1;
+}
+.contactBoxQuestionColumn{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color:black;
+}
+.contactBoxCheckbox {
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid black;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.contactBoxCheckbox:checked {
+  appearance: auto;
+  clip-path: circle(50% at 50% 50%);
+  accent-color: rgb(69, 69, 126);
+}
+.contactBoxButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 11%;
+  width: 11vw;
+  height:6vh;
+  border-radius: 10px;
+  background-color: rgb(69, 69, 126);
+}
+.contactBoxSmallBalloon{
+  width:108%;
+  height:88%;
+  background-color: #fd02fd;
+  position: absolute;
+  border-radius: 50%;
+  bottom:-53%;
+  right:-53%;
+}
+.contactBoxSmallBalloonsecond{
+  width:40%;
+  height:30%;
+  background-color: rgba(66, 56, 104, 0.8);
+  position: absolute;
+  border-radius: 50%;
+  bottom:11%;
+  right:11%;
+}
+
+
+.megaLetter{
+    margin-left: 5%;
+    transform: rotate(-25deg);
+    text-transform: uppercase;
+    font-family:Impact;
+    overflow: hidden;
+    font-size: 66vh;
+    font-weight: 700;
+    color:aqua;
+    text-shadow: 1px 1px 1px #fd02fd,
+        1px 2px 1px #fd02fd,
+        1px 3px 1px #fd02fd,
+        1px 4px 1px #fd02fd,
+        1px 5px 1px #fd02fd,
+        1px 6px 1px #fd02fd,
+        1px 7px 1px #fd02fd,
+        1px 8px 1px #fd02fd,
+        1px 9px 1px #fd02fd,
+        1px 10px 1px #fd02fd,
+    1px 18px 6px rgba(43, 43, 43, 0.4),
+    1px 22px 10px rgba(43, 43, 43,0.2),
+    1px 25px 35px rgba(43, 43, 43, 0.2),
+    1px 30px 60px rgba(43, 43, 43,0.4);
+}
+.smallLetter{
+  display: inline;
+  font-family:impact;
+  font-size: 3vw;
+  font-weight: 400;
+  color:aqua;
+  line-height: 1.6;
+  text-shadow: 1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+      1px 1px 1px #fd02fd,
+  1px 18px 6px rgba(43, 43, 43, 0.4),
+  1px 22px 10px rgba(43, 43, 43,0.2),
+  1px 25px 35px rgba(43, 43, 43, 0.2),
+  1px 30px 60px rgba(43, 43, 43,0.4);
+}
+
+/* HOVERS ACTIVES FOCUSES*/
+
+.megaLetter:hover,.headerStyle:hover,.smallLetter:hover, .frontText:hover, .TopProfileContainer:hover,.skillsBox:hover,.contactPageHeaderContainer:hover,
+ .contactBoxSmallHeaderContainer:hover , .contactBoxSmallCenterContainer:hover, .contactBoxFullText:hover{
+  cursor:default;
+}
+.sideMenuLink:hover, .topButton:hover, .contactBoxButton:hover{
+  cursor:grab;
+}
+.contactBoxButton:active{
+  background-color: rgba(69, 69, 126,0.5) ;
+}
+.contactBoxFullColumnContainer:hover, .contactBoxFullMessageContainer:hover{
+  border-color: rgb(1, 1, 110);
+  color:rgba(69, 69, 126);
+}
+
+.contactBoxFullColumnContainer:focus-within, .contactBoxFullMessageContainer:focus-within{
+ color: rgba(0,0,0,0.5);
+}
+.contactBoxFullInput:focus{
+  border-color: rgba(69, 69, 126,0.5);
+  color:black;
+}
+
+
+ .smallLinkSideMenu:hover{
+  background-color: aqua;
+  border-radius: 50%;
+  cursor:grab;
+}
+.iconsBoxStyle:hover{
+  cursor:grab;
+}
+
+

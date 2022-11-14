@@ -1,0 +1,67 @@
+
+.projectsContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.containerImage{
+    width:30%; 
+    height: 30%;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+
+.textInBox{
+    color: black;
+    font-style: normal;
+    font-size: 1vw;
+    font-weight: 300;
+}
+.buttonRowInBox{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4vw;
+    height:4vh;
+    margin-bottom: 15%;
+    padding-left:10%;
+    padding-right:10%;
+    border: 1px;
+    border-style:groove;
+    border-radius: 8px;
+    border-color: black;
+}
+
+.headerInBox:hover, .textInBox:hover, .buttonRowInBox:hover{
+    cursor: default;
+}
+.button:hover{
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
