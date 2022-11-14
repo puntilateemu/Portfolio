@@ -148,14 +148,7 @@ const ContactMobile: FC<SideMenuProps>  = (props): JSX.Element =>{
             setNameWarning(false)
             setClicked(clicked+1)
             
-        axios.post('https://puntilachain.com/loginsystem/users/recovery', {
-          email: mail, fname: firstName, lname: lastName, phone: phone, resume: checked ? 'yes' : 'no', message: message
-        }).then((response) => {
-          console.log(response.data)
-            setSuccessActive(true)
-            handleSuccessMessage()
-        }).catch(err => console.log(err))
-        }
+        //axios CALL HERE 
         if(!mail.includes('@') && !mail.includes('.')){
             setMailWarning(true)
             console.log("mail")
